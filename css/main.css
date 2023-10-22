@@ -430,7 +430,7 @@ dd {
 /* Customize container */
 @media only screen and (min-width: 767px) {
   .container {
-    max-width: 730px;
+    max-width: 1200px;
   }
 }
 
@@ -439,7 +439,7 @@ dd {
 
   /* Remove the padding we set earlier */
   .container {
-    max-width: 900px;
+    max-width: 1200px;
   }
 }
 

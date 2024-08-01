@@ -61,8 +61,15 @@
 
     .show-more {
       cursor: pointer;
-      color: blue;
-      text-decoration: underline;
+      color: #333;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .show-more i {
+      margin-right: 5px;
     }
   </style>
 </head>
@@ -152,7 +159,7 @@
           <li class="extra-news">2022.10 Our paper <b>WiID</b> has been accepted by <b>ICPR 2022</b>.</li>
           <li class="extra-news">2022.05 I received the Outstanding Graduate Student Award.</li>
         </ul>
-        <p class="show-more">Show more</p>
+        <p class="show-more"><i class="fas fa-caret-down"></i> Show more</p>
 
         <!-- Publications Section -->
         <h3 class="push-down-3"><span>Publications</span></h3>
@@ -205,10 +212,10 @@
         var extraNews = $(".extra-news");
         if (extraNews.is(":visible")) {
           extraNews.hide();
-          $(this).text("Show more");
+          $(this).html('<i class="fas fa-caret-down"></i> Show more');
         } else {
           extraNews.show();
-          $(this).text("Show less");
+          $(this).html('<i class="fas fa-caret-up"></i> Show less');
         }
       });
     });
